@@ -1,0 +1,145 @@
+body{
+	font-family: Open Sans;
+	margin: 0;
+	padding: 0;
+	background:#fff;
+	font-size: 15px;
+}
+
+div, header, section, h1, p, a, img, footer, input, form {
+	box-sizing: border-box;
+}
+
+.container {
+	width: 1170px; 
+	margin: 0 auto; 
+}
+
+header {
+	background: linear-gradient(to right, rgba(77,189,254,1) 0%, rgba(62,159,229,1) 100%);
+	color: #fff;
+	padding-top: 70px;
+	
+}
+
+.wrapper  {
+	display: flex;
+ 	justify-content: space-between;
+ 	align-items: center;
+}
+
+.offer {
+	width: 480px;
+}
+
+.offer p {
+	width: 400px;
+}
+
+h1 {
+	font-family: Montserrat;
+	font-size: 37px;
+	font-weight: bolder;
+	width: 600px;
+	
+}
+
+span {
+	font-size: 59px;
+	line-height: 1.4em;
+}
+.offer p {
+	font-size: 16px;
+}
+
+.info a {
+	padding-top: 18px;
+}
+
+.btn {
+	text-decoration: none;
+	color:#000;
+	background: #ffd429;
+	width: 220px;
+	height: 55px;
+	font-family: Montserrat;
+	display: block;
+	text-align: center;
+	transition:all 0.5s easy;
+	padding-top: 14px;
+}
+
+.btn:hover {
+	background:#f0d879;
+}
+h2 {
+	font-family: Montserrat;
+	font-size: 30px;
+	text-align: center;
+	padding-top: 60px;
+	font-weight: bolder;
+	color:#201b2d;
+}
+
+h3 {
+	font-family: Montserrat;
+	font-size: 19px;
+}
+.container1 {
+	background: url(img/icon1.jpeg) no-repeat top;
+	color:#201b2d;
+	text-align: center;
+	width: 310px;
+	padding-top: 60px;
+}
+
+.containers{
+	display: flex;
+	justify-content: space-around;
+	padding-top: 20px;
+}
+
+.travel {
+	background: url(img/icon2.jpeg) no-repeat top;
+}
+
+.value {
+	background: url(img/icon3.jpeg) no-repeat top;
+}
+ .forms {
+	background: #ecf3f8;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 70px;
+	align-items: center;
+	}
+
+.forms form{
+	padding-bottom: 15px;
+	padding-top: 30px;
+	display:flex; 
+	flex-direction: column; 
+	align-items: center;
+}
+
+input {
+	width: 340px;
+	height: 45px;
+	color:#abaaae;
+	padding-left: 20px;
+}
+
+footer {
+	background:#164d7a;
+	text-align: center;
+	color:#6f88a3;
+	padding: 30px 0;
+
+}
+button {
+	margin: 0 auto;
+	cursor:pointer;
+}
+.btn1 {
+	width: 340px;
+}
