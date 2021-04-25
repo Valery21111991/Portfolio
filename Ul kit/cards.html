@@ -3,103 +3,381 @@
 	<head>
 		<title>Card</title>
 		<meta charset ="utf-8">
-		<link href="cards.css" type="text/css" rel="stylesheet">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;@700&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+		<link href="cards.css" type="text/css" rel="stylesheet">
 	</head>
 	<body>
+		<div class="center">
 		<header>
 			<img  class="logo" src="img/Group.png">
 		</header>
 		<div class="container">
-			<div class="search">
-					<fieldset>
-						<h3>Найдём номера под ваши пожелания</h3>
-						<div class="days clearfix">
-						<label class="comein">ПРИБЫТИЕ<br>
-							<form action="#">
-								<input type="date" placeholder="ДД.ММ.ГГГГ"><a href="#"><span class="material-icons"> expand_more</span></a>
-							</form>
-						</label>		
-						<label class="comeout">ВЫЕЗД<br>
-							<form action="#">
-								<input type="date" placeholder="ДД.ММ.ГГГГ"><a href="#"><span class="material-icons"> expand_more</span></a>
-							</form>
-						</label>
-						</div>
-						<div class ="guests">
-							<label>ГОСТИ<br>
+			<div class="column">
+				<div class="search">
+						<fieldset>
+							<h3 class="cards__container1">Найдём номера под ваши пожелания</h3>
+							<div class="days clearfix cards__container1">
+							<label class="comein">ПРИБЫТИЕ<br>
 								<form action="#">
-									<select name="quantity" > 
-										<option value="1" selected="selected">Сколько гостей"</option>
-										<option value="2">3 гостя</option>
-										<option value="3">2 гостя</option>
-										<option value="4">1 гость</option>
-									</select>
-								<a href="#"><span class="material-icons">expand_more</span></a>
+									<input type="date" placeholder="ДД.ММ.ГГГГ"><a href="#"><span class="material-icons"> expand_more</span></a>
+								</form>
+							</label>		
+							<label class="comeout">ВЫЕЗД<br>
+								<form action="#">
+									<input type="date" placeholder="ДД.ММ.ГГГГ"><a href="#"><span class="material-icons"> expand_more</span></a>
 								</form>
 							</label>
-						</div>
-						<div class="btn">
-							<a class="btn1" href="#">Подобрать номер <a class="material-icons" href="#"> 
-						 arrow_forward</a></a>
-						</div>
-					</fieldset>
+							</div>
+							<div class ="guests cards__container1">
+								<label>ГОСТИ<br>
+									<form action="#">
+										<select name="quantity" > 
+											<option value="1" selected="selected">Сколько гостей"</option>
+											<option value="2">3 гостя</option>
+											<option value="3">2 гостя</option>
+											<option value="4">1 гость</option>
+										</select>
+									<a href="#"><span class="material-icons">expand_more</span></a>
+									</form>
+								</label>
+							</div>
+							<div class="btn__element cards__container1">
+								<div class="btn">
+									<a class="btn1" href="#">Подобрать номер
+									 <a class="material-icons" href="#"> 
+							 arrow_forward</a></a></div>
+								
+							</div>
+						</fieldset>
+							
+				</div>	
+				<div class="check-in">
+					<fieldset class="check-in__area">
+						<h3 class="check-in__heading">Регистрация аккаунта</h3>
+						<form class="check-in__data"action="#">
+								<input class="check-in__form" type="text"name="name" placeholder="Имя">
+								<input class="check-in__form" type="text"name="name" placeholder="Фамилия">
+						</form>
+						<div class="radio">
+								<div class="radio__position">
+								 <input class="radio__choice" name="human" type="radio" id="man">
+								 	<label class="radio__label" for="man">Мужчина</label>
+								</div>
+								<div class="radio__position radio__position_distanse">
+									<input class="radio__choice radio__choice_distanse" name="human" type="radio" id="woman">
+										<label class="radio__label" for="woman">Женщина</label>
+								</div>
 						
-			</div>
-			<div class="purchase">
-				<fieldset>
-					<div class="name_number">
-						<h3>№888<span class="lux">ЛЮКС</span></h3>
-						<p class="price"><span class="total_price">9 990₽</span> в сутки</p>
-					</div>
-						<div class="days clearfix">
-						<label class="comein">ПРИБЫТИЕ<br>
-							<form action="#">
-								<input type="date" placeholder=""><a href="#"><span class="material-icons"> expand_more</span></a>
-							</form>
-						</label>		
-						<label class="comeout">ВЫЕЗД<br>
-							<form action="#">
-								<input type="date" placeholder=""><a href="#"><span class="material-icons"> expand_more</span></a>
-							</form>
-						</label>
+						</div>							
+						<div class="personal-info">
+							<div class="data">
+								<label class="personal-info__heading">дата рождения<br>
+									<form action="#">
+										<input class="personal-info__data" type="date" placeholder="ДД.ММ.ГГГГ">
+									</form>
+								</label>
+							</div>	
+							<div class="info">		
+								<label class="personal-info__heading">данные для входа в сервис<br>
+									<form action="#">
+										<input class="personal-info__data personal-info__data_size" type="email" placeholder="Email">
+										<input class="personal-info__data personal-info__data_size" type="password" placeholder="Пароль">
+									</form>
+								</label>
+							</div>	
 						</div>
-						<div class ="guests">
-							<label>ГОСТИ<br>
-								<form action="#">
-									<select name="quantity" > 
-										<option value="2"selected="selected">3 гостя</option><option value="1" >Сколько гостей"</option>
-										<option value="3">2 гостя</option>
-										<option value="4">1 гость</option>
-									</select>
-								<a href="#"><span class="material-icons">expand_more</span></a>
-								</form>
+						<div class="offer">
+							<label class="offer__switch">
+								  <input type="checkbox">
+								  <span class="offer__slider"></span>
 							</label>
-						</div>
-						<div class="calculation">
-						<table>
-							<tr>
-								<td>9 990₽ х 4 суток</td>
-								<td>39 960₽</td>
-							</tr>
-						</table>
-						</div>
-						<div class="btn">
-							<a class="btn1" href="#">Забронировать <a class="material-icons" href="#"> 
-						 arrow_forward</a></a>
+							<p class="offer__text">Получать спецпредложения</p>
+						</div>	
+						<div class="btn__element cards__container1">
+								<div class="btn">
+									<a class="btn1" href="#">Перейти к оплате
+									 <a class="material-icons" href="#"> 
+							 arrow_forward</a></a></div>
+								
+							</div>
+						<div class="check-in__next">
+							<p class="check-in__text check-in__text_color">
+								Уже есть аккаунт на Toxin
+							</p>
+							<div class="check-in__button">
+								<a href="#" class="btn3">войти
+								</a>
+							</div>
 						</div>
 					</fieldset>
-			</div>
-			<div class="calendar">
-			</div>
-			<div class="check_in">
-			</div>
-			<div class="input">
-			</div>
-			<div class="picture">
+				</div>
+			</div>	
+			<div class="column">
+				<div class="purchase">
+					<fieldset class="purchase__area">
+						<div class="name_number">
+							<h3 class="name__heading">№888<span class="lux">ЛЮКС</span></h3>
+							<p class="price">9 990₽ <span class="total_price">в сутки</span></p>
+						</div>
+							<div class="days clearfix cards__container1" >
+								<label class="comein">ПРИБЫТИЕ<br>
+									<form action="#">
+										<input type="date" placeholder=""><a href="#"><span class="material-icons"> expand_more</span></a>
+									</form>
+								</label>		
+								<label class="comeout">ВЫЕЗД<br>
+									<form action="#">
+										<input type="date" placeholder=""><a href="#"><span class="material-icons"> expand_more</span></a>
+									</form>
+								</label>
+							</div>
+							<div class ="guests cards__container1">
+								<label>ГОСТИ<br>
+									<form action="#">
+										<select name="quantity" > 
+											<option value="2"selected="selected">3 гостя</option><option value="1" >Сколько гостей"</option>
+											<option value="3">2 гостя</option>
+											<option value="4">1 гость</option>
+										</select>
+									<a href="#"><span class="material-icons">expand_more</span></a>
+									</form>
+								</label>
+							</div>
+							<div class="calculation cards__container1">
+								<table class="calculation__price">
+									<tr>
+										<td class="calculation__payment">9 990₽ х 4 суток</td>
+										<td class="calculation__amount">39 960₽</td>
+									</tr>
+									<tr>
+										<td class="calculation__payment">Сбор за услуги: скидка 2 179₽
+										<div class="calculation__elipse">i</div>
+										</td>
+										<td class="calculation__amount">0₽</td>
+									</tr>
+									<tr>
+										<td class="calculation__payment">Сбор за дополнительные <br> услуги
+											<div class="calculation__elipse calculation__elipse_distance">i</div></td>
+										<td class="calculation__amount">300₽</td>
+									</tr>
+									<tr class="calcultion__payment_font" >
+										<td class="calculation__payment calculation__payment_width calculation__payment_indent">Итого
+											<div class="calculation__line"></div></td>
+										<td class="calculation__amount  calculation__amount_width calculation__payment_indent">38 081₽</td>
+									</tr>
+								</table>
+							</div>
+							<div class="btn__element cards__container1">
+								<div class="btn">
+									<a class="btn1" href="#">Забронировать
+									 <a class="material-icons" href="#"> 
+							 arrow_forward</a></a></div>
+								
+							</div>
+						</fieldset>
+				</div>
+				<div class="input">
+					<fieldset class="input__block">
+						<h3 class="input__heading cards__container1">Войти</h3>
+						<form class="input__form cards__container1" action="#">
+							<input class="personal-info__data input__data" type="email" placeholder="Email">
+							<input class="personal-info__data input__data input__data_size" type="password" placeholder="Пароль">
+						</form>
+						<div class="btn__element cards__container1">
+								<div class="btn">
+									<a class="btn1 input__btn" href="#">Войти
+									 <a class="material-icons" href="#"> arrow_forward</a></a>
+								</div>
+						</div>
+						<div class="check-in__next">
+							<p class="check-in__text check-in__text_color">
+								Нет аккаунта на Toxin?
+							</p>
+							<div class="check-in__button input__btn3">
+								<a href="#" class="btn3">создать
+								</a>
+							</div>
+						</div>
+					</fieldset>
+				</div>	
+			</div>	
+			<div class="column">
+					<div class="calendar">
+						<fieldset class="calendar__area">
+							<div class="calendar__heading container4">
+								<a href=""><img src="img/arrow_back.svg" alt="arrow" class="calendar__arrrow-left"></a>
+								<h3 class="calendar__heading-text">Август 2019</h3>
+								<a href=""><img src="img/arrow_forward.svg" alt="arrow" class="calendar__arrrow-right"></a>
+							</div>
+							<table class="calendar__table  container4">
+								<tr class="calendar__row">
+									<th class="calendar__day calendar__day_first-row">Пн</th>
+									<th class="calendar__day calendar__day_first-row">Вт</th>
+									<th class="calendar__day calendar__day_first-row">Ср</th>
+									<th class="calendar__day calendar__day_first-row">Чт</th>
+									<th class="calendar__day calendar__day_first-row">Пт</th>
+									<th class="calendar__day calendar__day_first-row">Сб</th>
+									<th class="calendar__day calendar__day_first-row">Вс</th>
+								</tr>
+								<tr class="calendar__row">
+									<td class="calendar__day calendar__day_month">29</td>
+									<td class="calendar__day calendar__day_month">30</td>
+									<td class="calendar__day calendar__day_month">31</td>
+									<td class="calendar__day">1</td>
+									<td class="calendar__day">2</td>
+									<td class="calendar__day">3</td>
+									<td class="calendar__day">4</td>
+								</tr>
+								<tr class="calendar__row">
+									<td class="calendar__day">5</td>
+									<td class="calendar__day">6</td>
+									<td class="calendar__day">7</td>
+									<td class="calendar__day calendar__day_cicle-today">8</td>
+									<td class="calendar__day">9</td>
+									<td class="calendar__day">10</td>
+									<td class="calendar__day">11</td>
+								</tr>
+								<tr class="calendar__row">
+									<td class="calendar__day">12</td>
+									<td class="calendar__day">13</td>
+									<td class="calendar__day">14</td>
+									<td class="calendar__day">15</td>
+									<td class="calendar__day">16</td>
+									<td class="calendar__day">17</td>
+									<td class="calendar__day">18</td>
+								</tr>
+								<tr class="calendar__row">
+									<td class="calendar__day calendar__day_cicle">19</td>
+									<td class="calendar__day">20</td>
+									<td class="calendar__day">21</td>
+									<td class="calendar__day">22</td>
+									<td class="calendar__day calendar__day_cicle">23</td>
+									<td class="calendar__day">24</td>
+									<td class="calendar__day">25</td>
+								</tr>
+								<tr class="calendar__row">
+									<td class="calendar__day">26</td>
+									<td class="calendar__day">27</td>
+									<td class="calendar__day">28</td>
+									<td class="calendar__day">29</td>
+									<td class="calendar__day">30</td>
+									<td class="calendar__day">31</td>
+									<td class="calendar__day calendar__days_month">1</td>
+								</tr>
+							</table>
+							<div class="calendar__links container4">
+								<a class="calendar__link"href="">очистить</a>
+								<a class="calendar__link calendar__link_location"href="">применить</a>
+							</div>
+						</fieldset>
+					</div>
+					<div class="picture">
+						<fieldset class="card">
+							<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+							  <div class="carousel-indicators">
+							    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+							    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+							    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+							    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+							    </div>
+							  <div class="carousel-inner">
+							    <div class="carousel-item active">
+							      <img src="img/image.png" class="d-block w-100" alt="bed">
+							    </div>
+							    <div class="carousel-item">
+							      <img src="img/image.png" class="d-block w-100" alt="bed">
+							    </div>
+							    <div class="carousel-item">
+							      <img src="img/image.png" class="d-block w-100" alt="bed">
+							     </div>
+							    <div class="carousel-item">
+							      <img src="img/image.png" class="d-block w-100" alt="bed">
+							    </div>
+							  </div>
+							  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+							    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							    <span class="visually-hidden">Previous</span>
+							  </button>
+							  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+							    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+							    <span class="visually-hidden">Next</span>
+							  </button>
+							</div>
+							<div class="picture__number">
+								<h3 class="picture__heading">№888<span class="picture__lux">ЛЮКС</span></h3>
+								<p class="picture__price">9 990₽ <span class="picture__total-price">в сутки</span></p>
+							</div>
+							<div class="picture__line"></div>
+							<div class="stars">
+								<p class="stars__text">
+									<span class="material-icons stars__material-icons">star</span>
+									<span class="material-icons stars__material-icons">star</span>
+									<span class="material-icons stars__material-icons">star</span>
+									<span class="material-icons stars__material-icons">star</span>
+									<span class="material-icons stars__material-icons">star</span>
+								</p>	
+								<p class="stars__price picture__price">145 <span class="picture__total-price">Отзывов</span></p>
+							</div>
+						</fieldset>
+					</div>
+					<div class="picture">
+						<fieldset class="card">
+							<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+							  <div class="carousel-indicators">
+							    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+							    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+							    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+							    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+							    </div>
+							  <div class="carousel-inner">
+							    <div class="carousel-item active">
+							      <img src="img/image2.png" class="d-block w-100" alt="bed">
+							    </div>
+							    <div class="carousel-item">
+							      <img src="img/image2.png" class="d-block w-100" alt="bed">
+							    </div>
+							    <div class="carousel-item">
+							      <img src="img/image2.png" class="d-block w-100" alt="bed">
+							     </div>
+							    <div class="carousel-item">
+							      <img src="img/image2.png" class="d-block w-100" alt="bed">
+							    </div>
+							  </div>
+							  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+							    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							    <span class="visually-hidden">Previous</span>
+							  </button>
+							  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+							    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+							    <span class="visually-hidden">Next</span>
+							  </button>
+							</div>
+							<div class="picture__number">
+								<h3 class="picture__heading">№840</h3>
+								<p class="picture__price">9 900₽ <span class="picture__total-price">в сутки</span></p>
+							</div>
+							<div class="picture__line"></div>
+							<div class="stars">
+								<p class="stars__text">
+									<span class="material-icons stars__material-icons">star</span>
+									<span class="material-icons stars__material-icons">star</span>
+									<span class="material-icons stars__material-icons">star</span>
+									<span class="material-icons stars__material-icons">star</span>
+									<span class="material-icons stars__material-icons stars__material-icons_background">star_border</span>
+								</p>	
+								<p class="stars__price picture__price">65 <span class="picture__total-price">Отзывов</span></p>
+							</div>
+						</fieldset>
+					</div>
 			</div>
 		</div>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+
 	</body>
 </html>

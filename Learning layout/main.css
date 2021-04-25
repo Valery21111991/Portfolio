@@ -1,5 +1,5 @@
 body{
-	font-family: Open Sans;
+	font-family: 'Open Sans';
 	margin: 0;
 	padding: 0;
 	background:#fff;
@@ -37,9 +37,9 @@ header {
 }
 
 h1 {
-	font-family: Montserrat;
+	font-family: 'Ubuntu';
 	font-size: 37px;
-	font-weight: bolder;
+	font-weight: 700;
 	width: 600px;
 	
 }
@@ -62,7 +62,7 @@ span {
 	background: #ffd429;
 	width: 220px;
 	height: 55px;
-	font-family: Montserrat;
+	font-family: 'Montserrat';
 	display: block;
 	text-align: center;
 	transition:all 0.5s easy;
@@ -73,24 +73,31 @@ span {
 	background:#f0d879;
 }
 h2 {
-	font-family: Montserrat;
+	font-family: 'Ubuntu';
 	font-size: 30px;
 	text-align: center;
 	padding-top: 60px;
-	font-weight: bolder;
+	font-weight: 700;
 	color:#201b2d;
 }
 
 h3 {
-	font-family: Montserrat;
+	font-family: 'Ubuntu';
+	font-weight: 700;
 	font-size: 19px;
 }
+
 .container1 {
 	background: url(img/icon1.jpeg) no-repeat top;
 	color:#201b2d;
 	text-align: center;
 	width: 310px;
 	padding-top: 60px;
+}
+
+.container1 p {
+	font-family: 'Ubuntu';
+	font-weight: 400;
 }
 
 .containers{
@@ -115,7 +122,7 @@ h3 {
 	}
 
 .forms form{
-	padding-bottom: 15px;
+	
 	padding-top: 30px;
 	display:flex; 
 	flex-direction: column; 
@@ -127,6 +134,9 @@ input {
 	height: 45px;
 	color:#abaaae;
 	padding-left: 20px;
+	font-family: 'Ubuntu';
+	font-weight: 400;
+	margin-bottom: 15px;
 }
 
 footer {
@@ -142,4 +152,75 @@ button {
 }
 .btn1 {
 	width: 340px;
+}
+
+/*Responsive*/
+
+
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+	.container {
+		width: 960px;
+	}
+
+	.desktop {
+		width: 550px;
+	}
+
+	h1 {
+		width: auto;
+	}
+}
+
+/* 768px - 992px */
+@media screen and (max-width: 992px) {
+	.container {
+		width: 720px;
+	}
+	.wrapper {
+		flex-direction: column;
+	}
+	.offer {
+		width: 100%;
+	}
+
+	.desktop {
+		display: block;
+		width: 100%;
+	}
+
+	.offer {
+		width: 100%;
+		margin-top: 100px;
+	}
+
+	.offer p {
+		width: auto;
+	}
+}
+
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+	.container {
+		width: 540px;
+	}
+
+	.containers {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	input {
+		width: 100%;
+	}
+	.btn {
+	    width: 100%;
+	}
+}
+
+/* 320px - 576px */
+@media screen and (max-width: 576px) {
+	.container {
+		width: 90%;
+	}
 }

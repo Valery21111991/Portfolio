@@ -3,34 +3,36 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Homework №4</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400&display=swap" rel="stylesheet"> 
-	<link href="main.css" type="text/css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<link href="main.css" type="text/css" rel="stylesheet">
 	</head>
 <body>
 	<header>
 		<div class="container">
-			<img class="logo" src="img/logo.png">
+			<img class="logo animate__animated animate__fadeInDown" src="img/logo.png">
 			<div class="wrapper">
-				<div class="offer">
+				<div class="offer animate__animated animate__fadeInLeft">
 					<h1>С помощью верстки <br> я создам ту жизнь, о которой <br> <span>мечтаю!</span></h1>
 					<p>Мои стремления + настойчивость позволят мне достичь чего угодно. Я не верю в это. Я знаю это на 100%. Меня не остановить!</p>
 					<a class ="btn" href="#">Двигаться к мечте!</a>
 				</div>
-				<img src="img/picture.png">
+				<img class="desktop animate__animated animate__fadeInRight" src="img/picture.png">
 			</div>
 		</div>
 	</header>
-	<section>
+	<section id="learn" class="learn">
 		<div class="container">
-			<h2>Что меня ждет впереди</h2>
+			<h2 class="section-title animate__animated">Что меня ждет впереди</h2>
 			<div class ="containers">
 				<div class="container1">
-					<h3>Свободное время</h3>
+					<h3 >Свободное время</h3>
 					<p>Мне нужно свободное время на семью и самое настоящее</p>
 				</div>
-				<div class="container1 travel">
+				<div class="container1 travel animate__animated">
 					<h3>Яркие путешествия</h3>
 					<p>Работать откуда угодно - что может быть лучше?</p>
 				</div>
@@ -58,5 +60,7 @@
 			<p>© Все мои мечты защищены моим трудолюбием</p>
 		</div>
 	</footer>
+	<script src="jquery-3.6.0.min.js"></script>
+	<script src="mainfront.js"></script>
 </body>
 </html>
