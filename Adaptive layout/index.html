@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Anketa</title>
+	<link rel="stylesheet" href="https://use.typekit.net/tpq4awp.css">
+	<link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header class="header">
+		<div class="container header__container">
+			<nav class="header__menu">
+				<ul class="header__list">
+					<li class="header__item"><a href="#person-info" class="header__link">Личная информация</a></li>
+					<li class="header__item"><a href="#experience" class="header__link">Опыт</a></li>
+					<li class="header__item"><a href="#js" class="header__link">JavaScript</a></li>
+					<li class="header__item"><a href="#about" class="header__link">О себе</a></li>
+				</ul>
+			</nav>
+			<div class="header__burger">
+				<input id="header__toggle_hum" type="checkbox">
+				<label for="header__toggle_hum">
+					<div class="header__burger-menu"></div>
+				</label>	
+				<nav class="header__nav-burger">
+						<a href="#person-info" class="header__burger-link">Личная информация</a>
+						<a href="#experience" class="header__burger-link">Опыт</a>
+						<a href="#js" class="header__burger-link">JavaScript</a>
+						<a href="#about" class="header__burger-link">О себе</a>
+						<label for="header__toggle_hum" class="header__close">
+							<i class="far fa-window-close header__close"></i>
+						</label>
+				</nav>
+			</div>
+			<img src="img/line.png" alt="line">
+			<h1 class="header__heading">
+				Анкета
+			</h1>
+		</div>
+	</header>
+	<section class="person-info section">
+		<div class="container section__container">
+			<img src="img/info.svg" alt="info">
+			<h2 class="person-info__heading section__heading" id="person-info">Личная информация</h2>
+			<form action="#" class="person-info__form">
+				<input type="text" class="name person-info__input person-info__date" placeholder="ФИО">
+				<div class="person-info__select">
+					<select name="years" class="person-info__date person-info__date_arrow">
+						<option value="1" class="person-info__years" checked="checked"hidden="hidden"></option>
+						<option value="2" id="bv" class="person-info__years">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 1998</option>
+						<option value="3" id="bv1" class="person-info__years">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 1997</option>
+						<option value="4" id="bv2" class="person-info__years">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 1996</option>
+						<option value="5" id="bv3" class="person-info__years">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 1995</option>
+						<option value="6"  id="bv4" class="person-info__years">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 1994</option>
+						<option value="7" id="bv5" class="person-info__years">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 1993</option>
+						<option value="8" id="bv6" class="person-info__years">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 1992</option>
+				</select>	
+					<p class="person-info__years_born">Год рождения</p>	
+				</div>
+				<div class="person-info__from">
+					<input type="text" class="name person-info__input person-info__date person-info__date_focus" required="required">
+					<span class="person-info__textFrom">Место проживания</span>
+				</div>			
+				<input type="text" class="name person-info__input person-info__date" placeholder="Skype">
+				<input type="text" class="name person-info__input person-info__date" placeholder="E-mail">
+			</form>
+		</div>
+	</section>
+	<section class="experience section">
+		<div class="container section__container experience__container">
+			<img src="img/list.svg" alt="experience">
+			<h2 class="person-info__heading section__heading" id="experience">Расскажите о своем опыте</h2>
+			<form class="experience__skills">
+				<div class="experience_block">
+					<div class="experience__wrapper"><input type="checkbox" id="bem" class="experience__skill"> <label for="bem">БЭМ/OOCSS</label></div>
+					<div class="experience__wrapper"><input type="checkbox" id="pr" class="experience__skill"> <label for="pr">Stylus/LESS/SASS</label></div>
+					<div class="experience__wrapper"><input type="checkbox" id="svg" class="experience__skill"> <label for="svg">Работаю с SVG</label></div></div>
+				<div class="experience_block">
+					<div class="experience__wrapper"><input type="checkbox" id="sem" class="experience__skill"> <label for="sem">Верстаю семантично</label></div>
+					<div class="experience__wrapper"><input type="checkbox" id="es" class="experience__skill"> <label for="es">ES2015/ES2016</label></div>
+					<div class="experience__wrapper"><input type="checkbox" id="gul" class="experience__skill"> <label for="gul">Gulp/GRUNT</label></div></div>
+				<div class="experience_block">
+					<div class="experience__wrapper"><input type="checkbox" id="web" class="experience__skill"> <label for="web">Webpack</label></div>
+					<div class="experience__wrapper"><input type="checkbox" id="jq" class="experience__skill"> <label for="jq">jQuery</label></div>
+					<div class="experience__wrapper"><input type="checkbox" id="git" class="experience__skill"> <label for="git">Ипользую Git</label></div>
+				</div>
+			</form>
+		</div>
+	</section>
+	<section class="js section">
+		<div class="container section__container js__container">
+			<img src="img/js.svg" alt="JavaScript">
+			<h2 class="section__heading js__heading" id="js">Уровень владения JavaScript</h2>
+			<div class="js__slider">
+				<ul class="slider__list">
+					<li class="slider__item">Не владею</li>
+					<li class="slider__item">Использую готовые решения</li>
+					<li class="slider__item">Использую готовые решения и умею их переделывать</li>
+					<li class="slider__item">Пишу сложный JS с нуля</li>
+				</ul>
+				<div class="slider__block">
+					<div class="slider__markers">
+							<img src="img/marker.png" alt="marker" class="slider__markers1">
+							<img src="img/marker.png" alt="marker" class="slider__markers1 slider__markers_distance">
+					</div>
+					<div class="slider__wrapper" id="wrapper">
+						<div class="slider__division junior" id="junior"></div>
+						<div class="slider__division middle" id="middle">
+						</div>
+						<div class="slider__division senior" id="senior">
+						</div>
+						<div class="slider__division team-lead" id="team-lead">
+							<img src="img/marker.png" alt="marker" class="slider__marker">
+						</div>
+					</div>
+					<div class="slider__drops">
+						<input type="range" min="1" step="1" max="768" value="768" class="slider" id="myRange" oninput="fun1()">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="about section">
+		<div class="container section__container about__container">
+			<img src="img/about.svg" alt="about">
+			<h2 class="section__heading" id="about">Расскажите о себе</h2>
+			<p class="about__text">Напишите несколько предложений, чем привлекла наша вакансия и что вы ожидаете от работы у нас.</p>
+			<form action="#" class="about__form">
+				<textarea class="about__input person-info__date" placeholder="Понравилась тем, что..."></textarea>
+			</form>
+			<a href="#" class="btn">Готово</a>
+		</div>
+	</section>
+	<script src="index.js"></script>
+</body>
+</html>
