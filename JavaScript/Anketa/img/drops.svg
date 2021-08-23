@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22.968" height="26" viewBox="0 0 22.968 26">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #b0b0b0;
+        stroke-linejoin: round;
+        stroke-width: 1px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="drops.svg" class="cls-1" d="M594.791,1572.84a11,11,0,1,1-16.137-9.71l3.714-3.71a2,2,0,0,1,2.824,0l3.684,3.68A11,11,0,0,1,594.791,1572.84Z" transform="translate(-572.313 -1558.34)"/>
+</svg>
